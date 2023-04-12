@@ -51,6 +51,7 @@ def main():
     deck.shuffle()
     game_condition = True
     player_points = 0
+    print("Type 1 if the first hand is better, 0 if two hands are equal and -1 if the second hand is better")
     while game_condition and deck.size() >= 10:
         first_hand = deal_a_hand(deck)
         second_hand = deal_a_hand(deck)
